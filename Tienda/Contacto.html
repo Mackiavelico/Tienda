@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- comando meta para configurar tipos de caracteres especiales permitidos, escala de la pagina-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="IMG/cleaning.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/Styles.css"><!--link que hace referencia al archivo CSS-->
+  <title>Tienda 3B</title><!-- Título de pagina html-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--Link que hace conección con Bootstrap-->
+</head>
+
+<body>
+  <header><!-- recuadro en el head que lleva el título de la pagina con comandos bootstrap-->
+    <div class="p-2 bg-info bg-opacity-10 border border-info  rounded-bottom" class="info">
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p class="titulo">BIENVENIDOS</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          TIENDA 3B<cite title="Source Title"> *** Bueno / Bonito /
+            Barato</cite><!-- leyenda en el cuadro superior en al cabecera-->
+        </figcaption>
+      </figure>
+    </div>
+    <hr>
+    <nav><!--sección de los link de navegación entre pag html o accesos a otras páginas-->
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><!--Link que envia a la pagina principal html-->
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Quienes.html">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+        </li>
+        <li class="carrito">
+          <a href="#"><img src="IMG/Carrito.png" alt="" class="carrito"></a>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+
+  </header>
+
+  <section id="art3">
+    <article>
+      <form><!--Inicio del formulario-->
+        <div class="row mb-3">
+          <label for="nombre" class="col-sm-2 col-form-label">Nombre y Apellidos</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="nombre"><!--Recuadro para el nombre y apellido-->
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3"><!--Recuadro para el mail-->
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="direccion" class="col-sm-2 col-form-label">Dirección</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"
+              id="direccion"><!--Recuadro para el ingreso de la direccion del cliente-->
+          </div>
+        </div>
+        <section>
+
+          <div class="row mb-3">
+            <label for="producto" class="col-sm-2 col-form-label">Selecciona tu producto</label>
+            <div class="col-sm-10">
+              <select> <!--CAsilla para hacer selecciones de los productos que compraran-->
+                <option value="opcion0" class="form-control" selected>Selecciona tu producto preferido...</option>
+                <option value="opcion1" class="form-control">Lavalozas Quick 1200 ml.</option>
+                <option value="opcion2" class="form-control">Lavalozas Virginia 750 ml. </option>
+                <option value="opcion3" class="form-control">Lavalozas Magistral 750 ml.</option>
+                <option value="opcion4" class="form-control">Detergente líquido Ariel 1500 ml.</option>
+                <option value="opcion5" class="form-control">Detergente líquido Omo 3000 ml.</option>
+                <option value="opcion6" class="form-control">Detergente líquido Bio 1500 ml.</option>
+                <option value="opcion1" class="form-control">Escobilla Inodoro Virutex</option>
+                <option value="opcion2" class="form-control">Escobilla Ropa Atlantik</option>
+                <option value="opcion3" class="form-control">Escobilla loza Oxo</option>
+                <option value="opcion4" class="form-control">Escobillón Clorinda</option>
+                <option value="opcion5" class="form-control">Escobillón Fibro</option>
+                <option value="opcion6" class="form-control">Escobillón Make</option>
+                <option value="opcion1" class="form-control">Bolsas Basura</option>
+                <option value="opcion2" class="form-control">Bolsas Protecto</option>
+                <option value="opcion3" class="form-control">Bolsas Superior</option>
+                <option value="opcion4" class="form-control">Limpiador Fabuloso</option>
+                <option value="opcion5" class="form-control">Limpiador Mr. Músculos</option>
+                <option value="opcion6" class="form-control">Limpiador Solex</option>
+                <option value="opcion4" class="form-control">Traperos 1A</option>
+                <option value="opcion5" class="form-control">Traperos Limpia</option>
+                <option value="opcion6" class="form-control">Traperos Virutex</option>
+
+              </select>
+            </div>
+          </div>
+
+        </section>
+        <div class="row mb-3"><!--casilla para comentarios-->
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Déjanos tus Comentarios</label>
+          <div class="col-sm-10"><!--Recuadro para el texarea, aquie estaran los comentarios de los clientes-->
+            <textarea rows="5" cols="20" class="form-control" id="comentarios"></textarea>
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Interéses</legend>
+          <div class="col-sm-10"><!--estos son los checkbox que permitirtan una elección-->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridcheck" id="gridcheck1" value="option1">
+              <label class="form-check-label" for="gridcheck1">
+                Noticias
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridcheck" id="gridcheck2" value="option2">
+              <label class="form-check-label" for="gridcheck2">
+                Ofertas de productos
+              </label>
+            </div>
+            <div class="form-check disabled"><!--Checkbox pre-seleccionado-->
+              <input class="form-check-input" type="checkbox" name="gridcheck" id="gridcheck3" value="option3" checked>
+              <label class="form-check-label" for="gridcheck3">
+                Participar de encuestas
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2"><!--checkbox que da la opción de recibir notificaciones-->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheckes1">
+              <label class="form-check-label" for="gridCheck1">
+                Acepto recibir notificaciones
+              </label>
+            </div>
+          </div>
+        </div><!--botones de envío del formulario y el de limpiar lo ingresado para comenzar nuevamente-->
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-primary">Limpiar</button>
+      </form>
+    </article>
+  </section>
+
+
+  <footer><!--Inicio del footer, tienes los logos y link a las redes sociales, son botones sin los href-->
+    <hr>
+    <div class="p-5 bg-info bg-opacity-10 border border-info  rounded-top" class="info">
+
+      <h4>Síguenos en nuestras redes sociales.</h4>
+      <form action="">
+        <button type="button" class="btn btn-outline-primary"><img src="IMG/twitter.png" alt="" width="30px"
+            height="30px"> La tienda Twitter</button>
+        <button type="button" class="btn btn-outline-secondary"><img src="IMG/facebook.png" alt="" width="30px"
+            height="30px"> La tienda Facebook</button>
+        <button type="button" class="btn btn-outline-success"><img src="IMG/instagram.png" alt="" width="30px"
+            height="30px"> La tienda Instagram</button>
+      </form>
+      <hr>
+      &copy; Desarrollado por <a href="#">jose.m.montecinos.gonzalez@gmail.com</a> - 2023; Ingenierio Informático.
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script><!--Scrip final que permite la carga de los CSS online de bootstrap-->
+
+</body>
+
+</html>

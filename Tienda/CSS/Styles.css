@@ -1,0 +1,81 @@
+/*  Da margen del 3 porciento al cuerpo total d ela pagina y centra los textos */
+body{
+    margin: 3%;
+    text-align: center;
+}
+
+/*  define el tipo de letra, el margen de la sección y el alineado de los textos */
+header {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 3%;
+}
+
+/* otorga el color, la altura, el tipo de fuente  */
+.titulo{
+    color: rgba(42, 31, 202, 0.726);
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bolder;
+}
+
+/* a la seccion de los textos de la html quienes somos, le da margen  */
+#sectionQuienes{
+margin: 3%;
+}
+
+/* posiciona el carrito junto a los botones de navegación  */
+.carrito {
+    /*position-absolute top-50 start-100*/
+    resize: vertical;
+    width: 85%;
+    margin-top: 0rem !important;
+    width: 35px;
+    height: 35px;
+}
+
+/* otorga al parrafo principal la fuente d ela letra y su tamaño  */
+.parrafoPrinc{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/*  al título le otorga el subrayado y color del texto, tambien su tipo de fuente */
+u{
+    color: rgb(47, 131, 103);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*  son el color de fondo, sus margenes y separaciones, como sus bordes */
+aside {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 300px;
+    float: right;
+}
+
+/* otorga las caracteristicas a las grillas que contienen los mapas y productos  */
+#art2 {
+    border-style: double;
+    text-align: center;
+    margin: 3%;
+    padding: 5px;
+}
+
+/*  otorga las caracteristicas al marco del formulario */
+#art3 {
+    border-style: double;    
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 10px;   
+}
+
+/*  le da el mismo patron al del header */
+footer{
+    margin: 3%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
